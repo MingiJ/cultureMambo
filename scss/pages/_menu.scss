@@ -1,0 +1,55 @@
+.mnu {
+    display: grid;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-color: #333;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.bfast {
+    background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1)), url(../img/2.jpg);
+    
+}
+
+.lunch {
+    background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1)), url(../img/weggs.jpg);
+    
+}
+
+.dinner {
+    background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1)), url(../img/yummy.jpg);
+
+}
+
+.mnu-box {
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: .5s;
+    &:hover {
+        border: solid 1rem rgb(255, 238, 2);
+    }
+
+}
+
+
+
+.ctrls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 5rem;
+        margin-bottom: 3rem;
+    }
+    
+}
+

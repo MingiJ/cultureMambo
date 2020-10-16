@@ -1,0 +1,147 @@
+
+.mySlides {
+  display: none;
+}
+.home{
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 4s;
+}
+
+.slideshow-container{
+  height: 100%;
+  width: 100%;
+  position: relative;
+
+}
+.mySlides{
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1;}
+ 
+}
+@keyframes zoomin {
+  0% {
+      transform: scale(1,1);
+  }
+  50% {
+      transform: scale(1.2,1.2);
+  }
+  100% {
+      transform: scale(1,1);
+  }
+}
+
+.zoomin{
+position: relative;
+height: 100%;
+width: 100%;
+object-fit: cover;
+object-position: center;
+animation: zoomin 15s forwards;
+}
+
+.overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0,0, 0.80);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.elements{
+  position: absolute;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 3rem;
+}
+.logo{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  
+  font-size: 7rem;
+  color: #FFF;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 125%;
+}
+.culture{
+  letter-spacing: 0.7rem;
+  display: block;
+}
+.mambo{
+  letter-spacing: 2.5rem;
+  display: block;
+  transform: translateX(1rem);
+}
+
+
+.time{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    margin-bottom: 3rem;
+}
+.day{
+  margin-right: 3rem;
+  color: #fff;
+  font-weight: 200;
+  span{
+    display: block;
+  &:nth-child(1){
+    font-size: 2rem;
+    letter-spacing: 2px;
+  }  
+  &:nth-child(2){
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+  }
+}
+  
+}
+.location{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-right: 3rem;
+  margin-bottom: 3rem;
+  span{
+    display: block;
+    color: rgba(255, 255, 255, 0.826);
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+    text-align: end;
+    &:nth-child(1){
+      font-size: 2rem;
+      letter-spacing: 2px;
+      text-align: end;
+      margin-bottom: .5rem;
+    }  
+  }
+}
+
+
